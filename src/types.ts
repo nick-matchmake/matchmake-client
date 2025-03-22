@@ -1,4 +1,4 @@
-  export interface MatchmakingConfig {
+export interface MatchmakingConfig {
   id: number;
   name: string;
   max_players: number;
@@ -38,4 +38,14 @@ export interface HostInfo {
 export interface ClientOptions {
   apiToken?: string;
   debug?: boolean;
+}
+
+// These are internal interfaces, not exported from index
+export interface ConnectResponse {
+  active_configs: MatchmakingConfig[];
+  session_token: string;
+}
+
+export interface LobbyResponse {
+  lobby: Lobby;
 }

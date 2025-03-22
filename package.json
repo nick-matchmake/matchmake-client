@@ -1,17 +1,17 @@
 {
   "name": "matchmake-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Client library for Matchmake.io",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
       "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
     }
   },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
